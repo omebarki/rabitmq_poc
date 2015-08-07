@@ -11,7 +11,7 @@ import com.theagent.rabitmq.Constants;
 public class RabitPublisher {
     public static void main(String[] args) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost(Constants.QUEUE_HOST);
         Connection connection = null;
         Channel channel = null;
         try {

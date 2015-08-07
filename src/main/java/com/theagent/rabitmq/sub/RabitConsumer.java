@@ -10,10 +10,13 @@ import com.theagent.rabitmq.Constants;
  * Created by Omar MEBARKI on 07/08/2015.
  */
 public class RabitConsumer {
+
+
+
     public static void main(String[] args) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        Connection connection=null;
+        factory.setHost(Constants.QUEUE_HOST);
+        Connection connection = null;
         Channel channel = null;
         try {
             connection = factory.newConnection();
