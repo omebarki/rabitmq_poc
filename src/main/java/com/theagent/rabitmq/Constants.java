@@ -5,5 +5,5 @@ package com.theagent.rabitmq;
  */
 public interface Constants {
     String QUEUE_NAME = "rabitmq_pocqueue";
-    String QUEUE_HOST = "localhost";
+    String QUEUE_HOST = "212.129.16.12";
 }
